@@ -19,14 +19,6 @@
             font-size: 30px;
             position: relative;
         }
-        .contact-info {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffcc00;
-        }
         .module {
             margin: 20px;
             border-radius: 10px;
@@ -60,6 +52,13 @@
             font-size: 18px;
             cursor: pointer;
         }
+        .contact-info {
+            background-color: #0078D4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
     </style>
     <script>
         function toggleContent(moduleId) {
@@ -80,11 +79,6 @@
 
     <div class="header">
         Azure Cloud & DevOps Course Modules
-        <div class="contact-info">
-            <strong>UB DevopsCloudHub</strong><br>
-            <strong>Contact: 6364331326</strong><br>
-            <strong>Email: baranidharanusha@gmail.com</strong>
-        </div>
     </div>
 
     <!-- Module 1 -->
@@ -291,48 +285,72 @@
             <p>________________________________________</p>
             <p><strong>Module 5: CI/CD with Azure DevOps and Jenkins</strong></p>
             <ul>
-                <li>What is CI/CD?
+                <li>Continuous Integration (CI) with Azure DevOps
                     <ul>
-                        <li>Continuous Integration (CI) vs Continuous Delivery (CD)</li>
-                        <li>Benefits of implementing CI/CD in DevOps culture</li>
+                        <li>Building and managing CI/CD pipelines</li>
+                        <li>Integrating Terraform with Azure DevOps pipelines</li>
                     </ul>
                 </li>
-                <li>Introduction to Azure DevOps
+                <li>Introduction to Jenkins
                     <ul>
-                        <li>Overview of Azure DevOps services (Boards, Repos, Pipelines, Artifacts, Test Plans)</li>
-                        <li>Azure DevOps Repos for version control</li>
+                        <li>Overview of Jenkins and its use in the DevOps pipeline</li>
+                        <li>Jenkins Setup: Installing Jenkins on different environments</li>
                     </ul>
                 </li>
-                <li>Building a CI/CD Pipeline with Azure DevOps
-                    <ul>
-                        <li>Setting up a Git repository in Azure DevOps</li>
-                    </ul>
-                </li>
+                <li>Creating and Managing Jenkins Pipelines</li>
+                <li>Integrating Jenkins with GitHub</li>
+                <li>Automating Builds using Jenkins</li>
             </ul>
         </div>
     </div>
 
     <!-- Module 6 -->
     <div class="module module6">
-        <div class="title">Module 6: Introduction to CI/CD with Jenkins</div>
+        <div class="title">Module 6: Introduction to Jenkins and GitHub</div>
         <ul>
             <li>Overview of Continuous Integration (CI)</li>
-            <li>Setting Up Jenkins and GitHub</li>
-            <li>Connecting Jenkins with GitHub</li>
-            <li>Hands-on: Creating a Jenkins pipeline</li>
+            <li>What is Jenkins?</li>
+            <li>What is GitHub?</li>
         </ul>
         <div class="show-button" id="btn-module6" onclick="toggleContent('module6-content')">Show Full Content</div>
         <div class="full-content" id="module6-content">
             <p><strong>Course Modules</strong></p>
             <p>________________________________________</p>
-            <p><strong>Module 6: Introduction to CI/CD with Jenkins</strong></p>
+            <p><strong>Module 6: Introduction to Jenkins and GitHub</strong></p>
             <ul>
                 <li>Introduction to Jenkins and GitHub
                     <ul>
                         <li>Overview of Continuous Integration (CI): Explain the concept of CI and its benefits.</li>
-                        <li>What is Jenkins?: Provide an introduction to Jenkins and its use in the DevOps pipeline.</li>
-                        <li>Jenkins Setup: Explain the process of setting up Jenkins on different environments (local and cloud-based). 
-                        </li>
+                        <li>What is Jenkins?: Provide an introduction to Jenkins and its role in CI/CD pipelines.</li>
+                        <li>What is GitHub?: Explain GitHub and its importance in version control and collaboration.</li>
+                    </ul>
+                </li>
+                <li>Setting Up Jenkins and GitHub
+                    <ul>
+                        <li>Installing Jenkins: Guide on how to install Jenkins on different platforms.</li>
+                        <li>Creating a GitHub Account: Show how to create and set up a GitHub account.</li>
+                    </ul>
+                </li>
+                <li>Basic Concepts and Usage
+                    <ul>
+                        <li>Jenkins Dashboard: Walkthrough of the Jenkins user interface and dashboard.</li>
+                        <li>GitHub Repositories: Explain repositories, branches, and commits in GitHub.</li>
+                        <li>Creating a Repository: Demonstrate how to create a new repository on GitHub.</li>
+                        <li>Cloning a Repository: Show how to clone a GitHub repository locally.</li>
+                    </ul>
+                </li>
+                <li>Integration and Automation
+                    <ul>
+                        <li>Connecting Jenkins with GitHub: Explain how to integrate Jenkins with GitHub repositories.</li>
+                        <li>Creating a Jenkins Job: Guide on how to create and configure a Jenkins job.</li>
+                        <li>Triggering Builds Automatically: Show how to set up automatic build triggers based on GitHub commits or pull requests.</li>
+                        <li>Build Pipelines: Introduction to Jenkins pipelines and how to create them.</li>
+                    </ul>
+                </li>
+                <li>Practical Examples
+                    <ul>
+                        <li>Simple Build Job: Demonstrate a simple build job from GitHub to Jenkins.</li>
+                        <li>Pipeline Script Example: Provide an example of a basic Jenkins pipeline script.</li>
                     </ul>
                 </li>
             </ul>
@@ -378,6 +396,13 @@
                 </li>
             </ul>
         </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <p>Institute Name: <strong>UB DevopsCloudHub</strong></p>
+        <p>Contact Number: <strong>6364331326</strong></p>
+        <p>Email: <strong>baranidharanusha@gmail.com</strong></p>
     </div>
 
 </body>
