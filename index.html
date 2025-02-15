@@ -26,6 +26,8 @@
             color: white;
             font-weight: bold;
             cursor: pointer;
+            display: flex;
+            align-items: center;
         }
         .module:hover {
             transform: scale(1.05);
@@ -237,10 +239,9 @@
         <div>
             <div class="title">Module 4: Introduction to Kubernetes</div>
             <ul>
-                <li>Understanding Kubernetes architecture</li>
-                <li>Working with Pods, Deployments, and Services</li>
-                <li>Scaling applications using Kubernetes</li>
-                <li>Hands-on: Deploying a Kubernetes application</li>
+                <li>What is Kubernetes?</li>
+                <li>Setting up Kubernetes clusters</li>
+                <li>Deploying applications in Kubernetes</li>
             </ul>
             <div class="show-button" id="btn-module4" onclick="toggleContent('module4-content')">Show Full Content</div>
             <div class="full-content" id="module4-content">
@@ -248,22 +249,22 @@
                 <p>________________________________________</p>
                 <p><strong>Module 4: Introduction to Kubernetes</strong></p>
                 <ul>
-                    <li>Introduction to Kubernetes
+                    <li>What is Kubernetes? 
                         <ul>
-                            <li>What Kubernetes is and why it is used</li>
+                            <li>Understanding Kubernetes architecture and components (pods, services, deployments, etc.)</li>
                         </ul>
                     </li>
-                    <li>Kubernetes Architecture
+                    <li>Setting Up Kubernetes 
                         <ul>
-                            <li>Understanding Pods, Nodes, and Clusters</li>
+                            <li>How to set up a Kubernetes cluster</li>
                         </ul>
                     </li>
-                    <li>Basic Kubernetes Commands
+                    <li>Deploying Applications 
                         <ul>
-                            <li>Introduction to kubectl commands</li>
+                            <li>How to deploy applications in Kubernetes clusters.</li>
                         </ul>
                     </li>
-                    <li>Hands-on: Deploying an application on Kubernetes</li>
+                    <li>Hands-on: Creating a pod and deploying an application in Kubernetes</li>
                 </ul>
             </div>
         </div>
@@ -272,40 +273,32 @@
     <!-- Module 5 -->
     <div class="module module5">
         <div>
-            <div class="title">Module 5: Continuous Integration with Jenkins</div>
+            <div class="title">Module 5: CI/CD with Azure DevOps and Jenkins</div>
             <ul>
-                <li>Introduction to Jenkins and its role in CI/CD</li>
-                <li>Setting up Jenkins and creating pipelines</li>
-                <li>Integrating Jenkins with GitHub and other tools</li>
-                <li>Hands-on: Building a simple Jenkins pipeline</li>
+                <li>Continuous Integration (CI) with Azure DevOps</li>
+                <li>Integrating Terraform with Azure DevOps pipelines</li>
             </ul>
             <div class="show-button" id="btn-module5" onclick="toggleContent('module5-content')">Show Full Content</div>
             <div class="full-content" id="module5-content">
                 <p><strong>Course Modules</strong></p>
                 <p>________________________________________</p>
-                <p><strong>Module 5: Continuous Integration with Jenkins</strong></p>
+                <p><strong>Module 5: CI/CD with Azure DevOps and Jenkins</strong></p>
                 <ul>
-                    <li>Introduction to Jenkins and Continuous Integration
+                    <li>Continuous Integration (CI) with Azure DevOps
                         <ul>
-                            <li>Overview of Jenkins and its use in DevOps</li>
+                            <li>Building and managing CI/CD pipelines</li>
+                            <li>Integrating Terraform with Azure DevOps pipelines</li>
                         </ul>
                     </li>
-                    <li>Setting Up Jenkins
+                    <li>Introduction to Jenkins
                         <ul>
-                            <li>How to install and configure Jenkins</li>
+                            <li>Overview of Jenkins and its use in the DevOps pipeline</li>
+                            <li>Jenkins Setup: Installing Jenkins on different environments</li>
                         </ul>
                     </li>
-                    <li>Creating Jenkins Pipelines
-                        <ul>
-                            <li>Building and automating CI/CD pipelines in Jenkins</li>
-                        </ul>
-                    </li>
-                    <li>Integrating Jenkins with GitHub
-                        <ul>
-                            <li>Connecting Jenkins to GitHub repositories</li>
-                        </ul>
-                    </li>
-                    <li>Hands-on: Building a simple Jenkins pipeline</li>
+                    <li>Creating and Managing Jenkins Pipelines</li>
+                    <li>Integrating Jenkins with GitHub</li>
+                    <li>Automating Builds using Jenkins</li>
                 </ul>
             </div>
         </div>
@@ -314,49 +307,76 @@
     <!-- Module 6 -->
     <div class="module module6">
         <div>
-            <div class="title">Module 6: Version Control with Git and GitHub</div>
+            <div class="title">Module 6: Introduction to Jenkins and GitHub</div>
             <ul>
-                <li>Git basics: clone, commit, push, pull</li>
-                <li>GitHub repositories and branching</li>
-                <li>Collaborating on projects with pull requests</li>
-                <li>Hands-on: Setting up a GitHub repository</li>
+                <li>Overview of Continuous Integration (CI)</li>
+                <li>What is Jenkins?</li>
+                <li>What is GitHub?</li>
             </ul>
             <div class="show-button" id="btn-module6" onclick="toggleContent('module6-content')">Show Full Content</div>
             <div class="full-content" id="module6-content">
                 <p><strong>Course Modules</strong></p>
                 <p>________________________________________</p>
-                <p><strong>Module 6: Version Control with Git and GitHub</strong></p>
+                <p><strong>Module 6: Introduction to Jenkins and GitHub</strong></p>
                 <ul>
-                    <li>Introduction to Git and Version Control
+                    <li>Introduction to Jenkins and GitHub
                         <ul>
-                            <li>Why version control is essential in DevOps</li>
+                            <li>Overview of Continuous Integration (CI): Explain the concept of CI and its benefits.</li>
+                            <li>What is Jenkins?: Provide an introduction to Jenkins and its role in CI/CD pipelines.</li>
+                            <li>What is GitHub?: Explain GitHub and its importance in version control and collaboration.</li>
                         </ul>
                     </li>
-                    <li>Setting up Git
+                    <li>Setting Up Jenkins and GitHub
                         <ul>
-                            <li>How to install and configure Git</li>
+                            <li>Installing Jenkins: Guide on how to install Jenkins on different platforms.</li>
+                            <li>Creating a GitHub Account: Show how to create a GitHub account and set up repositories.</li>
                         </ul>
                     </li>
-                    <li>Git Commands
+                    <li>Integrating Jenkins with GitHub
                         <ul>
-                            <li>Using commands like clone, commit, push, pull, and merge</li>
+                            <li>Integrating Jenkins with GitHub for CI/CD pipelines.</li>
                         </ul>
                     </li>
-                    <li>Working with GitHub
-                        <ul>
-                            <li>Creating repositories, forking, and cloning repos</li>
-                        </ul>
-                    </li>
-                    <li>Hands-on: Collaborating with others using pull requests</li>
+                    <li>Hands-on: Building a CI pipeline using Jenkins and GitHub</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Contact Information -->
-    <div class="contact-info">
-        <p>Contact us at support@example.com</p>
+    <!-- Module 7 -->
+    <div class="module module7">
+        <div>
+            <div class="title">Module 7: Introduction to Azure DevOps</div>
+            <ul>
+                <li>What is Azure DevOps?</li>
+                <li>Azure DevOps Services Overview</li>
+                <li>Creating a project in Azure DevOps</li>
+            </ul>
+            <div class="show-button" id="btn-module7" onclick="toggleContent('module7-content')">Show Full Content</div>
+            <div class="full-content" id="module7-content">
+                <p><strong>Course Modules</strong></p>
+                <p>________________________________________</p>
+                <p><strong>Module 7: Introduction to Azure DevOps</strong></p>
+                <ul>
+                    <li>Introduction to Azure DevOps
+                        <ul>
+                            <li>Overview of Azure DevOps Services: Introduction to Azure DevOps and its components (Boards, Repos, Pipelines, Artifacts, Test Plans).</li>
+                        </ul>
+                    </li>
+                    <li>Azure DevOps Projects and Pipelines
+                        <ul>
+                            <li>Creating a project in Azure DevOps</li>
+                            <li>Setting up CI/CD pipelines in Azure DevOps</li>
+                        </ul>
+                    </li>
+                    <li>Hands-on: Deploying a simple application using Azure DevOps pipeline</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+    <div class="contact-info">
+        <p>For more information, please contact us at <strong>support@azuredevops.com</strong>.</p>
+    </div>
 </body>
 </html>
