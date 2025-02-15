@@ -26,8 +26,6 @@
             color: white;
             font-weight: bold;
             cursor: pointer;
-            display: flex;
-            align-items: center;
         }
         .module:hover {
             transform: scale(1.05);
@@ -85,298 +83,327 @@
 
     <!-- Module 1 -->
     <div class="module module1">
-        <div>
-            <div class="title">Module 1: Introduction to Cloud Computing and Azure</div>
+        <div class="title">Module 1: Introduction to Cloud Computing and Azure</div>
+        <ul>
+            <li>Cloud models (Public, Private, Hybrid)</li>
+            <li>Azure regions, subscriptions, resource groups</li>
+            <li>Azure Load Balancer, Firewall, App Service</li>
+            <li>Hands-on: Setting up an Azure account</li>
+        </ul>
+        <div class="show-button" id="btn-module1" onclick="toggleContent('module1-content')">Show Full Content</div>
+        <div class="full-content" id="module1-content">
+            <p><strong>Course Modules</strong></p>
+            <p>________________________________________</p>
+            <p><strong>Module 1: Introduction to Cloud Computing and Azure</strong></p>
             <ul>
-                <li>Cloud models (Public, Private, Hybrid)</li>
-                <li>Azure regions, subscriptions, resource groups</li>
-                <li>Azure Load Balancer, Firewall, App Service</li>
-                <li>Hands-on: Setting up an Azure account</li>
+                <li>Overview of Cloud Computing
+                    <ul>
+                        <li>Cloud deployment models (Public, Private, Hybrid)</li>
+                        <li>Cloud service models (IaaS, PaaS, SaaS)</li>
+                    </ul>
+                </li>
+                <li>Introduction to Microsoft Azure
+                    <ul>
+                        <li>Azure regions, subscriptions, and resource groups</li>
+                        <li>Key Azure services (Compute, Storage, Networking)</li>
+                        <li>Azure portal and CLI overview</li>
+                        <li>Azure Site recovery and backup plan</li>
+                        <li>Azure Load balancer and application gateway</li>
+                        <li>Azure VM and Vnet & Vnet peering</li>
+                        <li>Azure Firewall & NSG</li>
+                        <li>Site to site and Point to site & Express route deployment and configuration</li>
+                        <li>Azure App service</li>
+                        <li>Azure Virtual WAN, Hub& Spoke</li>
+                        <li>Azure Monitor & Log analytic workspace</li>
+                        <li>Azure private endpoint and service end point</li>
+                        <li>Azure DNS</li>
+                    </ul>
+                </li>
+                <li>Hands-on: Setting up an Azure account and creating resources</li>
             </ul>
-            <div class="show-button" id="btn-module1" onclick="toggleContent('module1-content')">Show Full Content</div>
-            <div class="full-content" id="module1-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 1: Introduction to Cloud Computing and Azure</strong></p>
-                <ul>
-                    <li>Overview of Cloud Computing
-                        <ul>
-                            <li>Cloud deployment models (Public, Private, Hybrid)</li>
-                            <li>Cloud service models (IaaS, PaaS, SaaS)</li>
-                        </ul>
-                    </li>
-                    <li>Introduction to Microsoft Azure
-                        <ul>
-                            <li>Azure regions, subscriptions, and resource groups</li>
-                            <li>Key Azure services (Compute, Storage, Networking)</li>
-                            <li>Azure portal and CLI overview</li>
-                            <li>Azure Site recovery and backup plan</li>
-                            <li>Azure Load balancer and application gateway</li>
-                            <li>Azure VM and Vnet & Vnet peering</li>
-                            <li>Azure Firewall & NSG</li>
-                            <li>Site to site and Point to site & Express route deployment and configuration</li>
-                            <li>Azure App service</li>
-                            <li>Azure Virtual WAN, Hub& Spoke</li>
-                            <li>Azure Monitor & Log analytic workspace</li>
-                            <li>Azure private endpoint and service end point</li>
-                            <li>Azure DNS</li>
-                        </ul>
-                    </li>
-                    <li>Hands-on: Setting up an Azure account and creating resources</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Module 2 -->
     <div class="module module2">
-        <div>
-            <div class="title">Module 2: Infrastructure as Code (IaC) with Terraform</div>
+        <div class="title">Module 2: Infrastructure as Code (IaC) with Terraform</div>
+        <ul>
+            <li>Terraform installation and setup</li>
+            <li>Commands: init, apply, destroy</li>
+            <li>State management and remote storage</li>
+            <li>Hands-on: Deploy infrastructure with Terraform</li>
+        </ul>
+        <div class="show-button" id="btn-module2" onclick="toggleContent('module2-content')">Show Full Content</div>
+        <div class="full-content" id="module2-content">
+            <p><strong>Course Modules</strong></p>
+            <p>________________________________________</p>
+            <p><strong>Module 2: Infrastructure as Code (IaC) with Terraform</strong></p>
             <ul>
-                <li>Terraform installation and setup</li>
-                <li>Commands: init, apply, destroy</li>
-                <li>State management and remote storage</li>
-                <li>Hands-on: Deploy infrastructure with Terraform</li>
+                <li>Introduction to Infrastructure as Code (IaC)
+                    <ul>
+                        <li>Explain what IaC is and why it's important.</li>
+                    </ul>
+                </li>
+                <li>What is Terraform? 
+                    <ul>
+                        <li>Provide an overview of Terraform and its benefits.</li>
+                    </ul>
+                </li>
+                <li>Installation and Setup 
+                    <ul>
+                        <li>Guide on how to install Terraform and set up the environment.</li>
+                    </ul>
+                </li>
+                <li>Terraform Configuration Files 
+                    <ul>
+                        <li>Explain the structure and syntax of Terraform configuration files.</li>
+                    </ul>
+                </li>
+                <li>Providers 
+                    <ul>
+                        <li>Introduce Terraform providers and how to configure them.</li>
+                    </ul>
+                </li>
+                <li>Basic Commands 
+                    <ul>
+                        <li>Teach the basic Terraform commands like init, plan, apply, and destroy.</li>
+                    </ul>
+                </li>
+                <li>Defining Resources 
+                    <ul>
+                        <li>Show how to define infrastructure resources in Terraform.</li>
+                    </ul>
+                </li>
+                <li>Variables and Outputs 
+                    <ul>
+                        <li>Explain how to use variables and outputs in Terraform configurations.</li>
+                    </ul>
+                </li>
+                <li>State Management 
+                    <ul>
+                        <li>Discuss the importance of state management and remote state storage.</li>
+                    </ul>
+                </li>
+                <li>Managing infrastructure lifecycle (plan, apply, destroy)</li>
+                <li>Hands-on: Deploying a simple infrastructure on Azure using Terraform</li>
+                <li>Troubleshooting in terraform</li>
+                <li>Automate Terraform using CICD (Azure DevOps & Jenkins)</li>
             </ul>
-            <div class="show-button" id="btn-module2" onclick="toggleContent('module2-content')">Show Full Content</div>
-            <div class="full-content" id="module2-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 2: Infrastructure as Code (IaC) with Terraform</strong></p>
-                <ul>
-                    <li>Introduction to Infrastructure as Code (IaC)
-                        <ul>
-                            <li>Explain what IaC is and why it's important.</li>
-                        </ul>
-                    </li>
-                    <li>What is Terraform? 
-                        <ul>
-                            <li>Provide an overview of Terraform and its benefits.</li>
-                        </ul>
-                    </li>
-                    <li>Installation and Setup 
-                        <ul>
-                            <li>Guide on how to install Terraform and set up the environment.</li>
-                        </ul>
-                    </li>
-                    <li>Terraform Configuration Files 
-                        <ul>
-                            <li>Explain the structure and syntax of Terraform configuration files.</li>
-                        </ul>
-                    </li>
-                    <li>Providers 
-                        <ul>
-                            <li>Introduce Terraform providers and how to configure them.</li>
-                        </ul>
-                    </li>
-                    <li>Basic Commands 
-                        <ul>
-                            <li>Teach the basic Terraform commands like init, plan, apply, and destroy.</li>
-                        </ul>
-                    </li>
-                    <li>Defining Resources 
-                        <ul>
-                            <li>Show how to define infrastructure resources in Terraform.</li>
-                        </ul>
-                    </li>
-                    <li>Variables and Outputs 
-                        <ul>
-                            <li>Explain how to use variables and outputs in Terraform configurations.</li>
-                        </ul>
-                    </li>
-                    <li>State Management 
-                        <ul>
-                            <li>Discuss the importance of state management and remote state storage.</li>
-                        </ul>
-                    </li>
-                    <li>Managing infrastructure lifecycle (plan, apply, destroy)</li>
-                    <li>Hands-on: Deploying a simple infrastructure on Azure using Terraform</li>
-                    <li>Troubleshooting Terraform Errors</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Module 3 -->
     <div class="module module3">
-        <div>
-            <div class="title">Module 3: Introduction to Docker</div>
+        <div class="title">Module 3: Introduction to Docker</div>
+        <ul>
+            <li>Containers vs Virtual Machines</li>
+            <li>Docker CLI and Docker Compose</li>
+            <li>Hands-on: Building and running a Dockerized app</li>
+        </ul>
+        <div class="show-button" id="btn-module3" onclick="toggleContent('module3-content')">Show Full Content</div>
+        <div class="full-content" id="module3-content">
+            <p><strong>Course Modules</strong></p>
+            <p>________________________________________</p>
+            <p><strong>Module 3: Introduction to Docker</strong></p>
             <ul>
-                <li>What is Docker?</li>
-                <li>Docker architecture and components</li>
-                <li>Building and managing Docker containers</li>
-                <li>Docker commands: build, run, ps</li>
+                <li>What is Docker?
+                    <ul>
+                        <li>Containers vs Virtual Machines</li>
+                        <li>Benefits of Docker for application deployment</li>
+                    </ul>
+                </li>
+                <li>Docker Basics
+                    <ul>
+                        <li>Installation and setup</li>
+                        <li>Docker images, containers, and Dockerfile</li>
+                        <li>Docker CLI commands and Docker Compose</li>
+                    </ul>
+                </li>
+                <li>Working with Docker
+                    <ul>
+                        <li>Creating Docker images for applications</li>
+                        <li>Running and managing containers</li>
+                        <li>Introduction to Docker Hub</li>
+                    </ul>
+                </li>
+                <li>Hands-on: Building and running a simple Dockerized application</li>
             </ul>
-            <div class="show-button" id="btn-module3" onclick="toggleContent('module3-content')">Show Full Content</div>
-            <div class="full-content" id="module3-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 3: Introduction to Docker</strong></p>
-                <ul>
-                    <li>Introduction to Docker
-                        <ul>
-                            <li>What Docker is and its role in DevOps</li>
-                        </ul>
-                    </li>
-                    <li>Docker Architecture 
-                        <ul>
-                            <li>Overview of Docker architecture and components (containers, images, Docker Hub, etc.)</li>
-                        </ul>
-                    </li>
-                    <li>Basic Docker Commands
-                        <ul>
-                            <li>Introduction to key Docker commands: build, run, ps, exec, stop, and remove.</li>
-                        </ul>
-                    </li>
-                    <li>Hands-on: Creating and running a simple container</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Module 4 -->
     <div class="module module4">
-        <div>
-            <div class="title">Module 4: Introduction to Kubernetes</div>
+        <div class="title">Module 4: Introduction to Kubernetes</div>
+        <ul>
+            <li>Kubernetes architecture and components</li>
+            <li>Deploying multi-container apps with AKS</li>
+            <li>Hands-on: Deploying app on Azure AKS</li>
+        </ul>
+        <div class="show-button" id="btn-module4" onclick="toggleContent('module4-content')">Show Full Content</div>
+        <div class="full-content" id="module4-content">
+            <p><strong>Course Modules</strong></p>
+            <p>________________________________________</p>
+            <p><strong>Module 4: Introduction to Kubernetes</strong></p>
             <ul>
-                <li>What is Kubernetes?</li>
-                <li>Setting up Kubernetes clusters</li>
-                <li>Deploying applications in Kubernetes</li>
+                <li>What is Kubernetes?
+                    <ul>
+                        <li>Kubernetes architecture and components (Pods, Nodes, Services, etc.)</li>
+                        <li>Key Kubernetes concepts (Deployments, ReplicaSets, Namespaces)</li>
+                    </ul>
+                </li>
+                <li>Kubernetes Setup and Configuration
+                    <ul>
+                        <li>Setting up Kubernetes with Azure AKS (Azure Kubernetes Service)</li>
+                        <li>Introduction to kubectl and Helm</li>
+                    </ul>
+                </li>
+                <li>Container Orchestration with Kubernetes
+                    <ul>
+                        <li>Deploying multi-container applications</li>
+                        <li>Scaling applications in Kubernetes</li>
+                        <li>Rolling updates and health checks</li>
+                    </ul>
+                </li>
+                <li>Kubernetes troubleshooting session</li>
+                <li>Hands-on: Deploying a simple app to AKS (Azure Kubernetes Service)</li>
             </ul>
-            <div class="show-button" id="btn-module4" onclick="toggleContent('module4-content')">Show Full Content</div>
-            <div class="full-content" id="module4-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 4: Introduction to Kubernetes</strong></p>
-                <ul>
-                    <li>What is Kubernetes? 
-                        <ul>
-                            <li>Understanding Kubernetes architecture and components (pods, services, deployments, etc.)</li>
-                        </ul>
-                    </li>
-                    <li>Setting Up Kubernetes 
-                        <ul>
-                            <li>How to set up a Kubernetes cluster</li>
-                        </ul>
-                    </li>
-                    <li>Deploying Applications 
-                        <ul>
-                            <li>How to deploy applications in Kubernetes clusters.</li>
-                        </ul>
-                    </li>
-                    <li>Hands-on: Creating a pod and deploying an application in Kubernetes</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Module 5 -->
     <div class="module module5">
-        <div>
-            <div class="title">Module 5: CI/CD with Azure DevOps and Jenkins</div>
+        <div class="title">Module 5: CI/CD with Azure DevOps and Jenkins</div>
+        <ul>
+            <li>Building and managing CI/CD pipelines in Azure DevOps</li>
+            <li>Integrating Terraform with Azure DevOps</li>
+            <li>CI/CD with Jenkins</li>
+            <li>Hands-on: Build a Dockerized app pipeline in Azure DevOps and Jenkins</li>
+        </ul>
+        <div class="show-button" id="btn-module5" onclick="toggleContent('module5-content')">Show Full Content</div>
+        <div class="full-content" id="module5-content">
+            <p><strong>Course Modules</strong></p>
+            <p>________________________________________</p>
+            <p><strong>Module 5: CI/CD with Azure DevOps and Jenkins</strong></p>
             <ul>
-                <li>Continuous Integration (CI) with Azure DevOps</li>
-                <li>Integrating Terraform with Azure DevOps pipelines</li>
+                <li>Continuous Integration (CI) with Azure DevOps
+                    <ul>
+                        <li>Building and managing CI/CD pipelines</li>
+                        <li>Integrating Terraform with Azure DevOps pipelines</li>
+                    </ul>
+                </li>
+                <li>Introduction to Jenkins
+                    <ul>
+                        <li>Overview of Jenkins and its use in the DevOps pipeline</li>
+                        <li>Jenkins Setup: Installing Jenkins on different environments</li>
+                    </ul>
+                </li>
+                <li>Creating and Managing Jenkins Pipelines</li>
+                <li>Integrating Jenkins with GitHub</li>
+                <li>Automating Builds using Jenkins</li>
             </ul>
-            <div class="show-button" id="btn-module5" onclick="toggleContent('module5-content')">Show Full Content</div>
-            <div class="full-content" id="module5-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 5: CI/CD with Azure DevOps and Jenkins</strong></p>
-                <ul>
-                    <li>Continuous Integration (CI) with Azure DevOps
-                        <ul>
-                            <li>Building and managing CI/CD pipelines</li>
-                            <li>Integrating Terraform with Azure DevOps pipelines</li>
-                        </ul>
-                    </li>
-                    <li>Introduction to Jenkins
-                        <ul>
-                            <li>Overview of Jenkins and its use in the DevOps pipeline</li>
-                            <li>Jenkins Setup: Installing Jenkins on different environments</li>
-                        </ul>
-                    </li>
-                    <li>Creating and Managing Jenkins Pipelines</li>
-                    <li>Integrating Jenkins with GitHub</li>
-                    <li>Automating Builds using Jenkins</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Module 6 -->
     <div class="module module6">
-        <div>
-            <div class="title">Module 6: Introduction to Jenkins and GitHub</div>
+        <div class="title">Module 6: Introduction to Jenkins and GitHub</div>
+        <ul>
+            <li>Overview of Continuous Integration (CI)</li>
+            <li>What is Jenkins?</li>
+            <li>What is GitHub?</li>
+        </ul>
+        <div class="show-button" id="btn-module6" onclick="toggleContent('module6-content')">Show Full Content</div>
+        <div class="full-content" id="module6-content">
+            <p><strong>Course Modules</strong></p>
+            <p>________________________________________</p>
+            <p><strong>Module 6: Introduction to Jenkins and GitHub</strong></p>
             <ul>
-                <li>Overview of Continuous Integration (CI)</li>
-                <li>What is Jenkins?</li>
-                <li>What is GitHub?</li>
+                <li>Introduction to Jenkins and GitHub
+                    <ul>
+                        <li>Overview of Continuous Integration (CI): Explain the concept of CI and its benefits.</li>
+                        <li>What is Jenkins?: Provide an introduction to Jenkins and its role in CI/CD pipelines.</li>
+                        <li>What is GitHub?: Explain GitHub and its importance in version control and collaboration.</li>
+                    </ul>
+                </li>
+                <li>Setting Up Jenkins and GitHub
+                    <ul>
+                        <li>Installing Jenkins: Guide on how to install Jenkins on different platforms.</li>
+                        <li>Creating a GitHub Account: Show how to create and set up a GitHub account.</li>
+                    </ul>
+                </li>
+                <li>Basic Concepts and Usage
+                    <ul>
+                        <li>Jenkins Dashboard: Walkthrough of the Jenkins user interface and dashboard.</li>
+                        <li>GitHub Repositories: Explain repositories, branches, and commits in GitHub.</li>
+                        <li>Creating a Repository: Demonstrate how to create a new repository on GitHub.</li>
+                        <li>Cloning a Repository: Show how to clone a GitHub repository locally.</li>
+                    </ul>
+                </li>
+                <li>Integration and Automation
+                    <ul>
+                        <li>Connecting Jenkins with GitHub: Explain how to integrate Jenkins with GitHub repositories.</li>
+                        <li>Creating a Jenkins Job: Guide on how to create and configure a Jenkins job.</li>
+                        <li>Triggering Builds Automatically: Show how to set up automatic build triggers based on GitHub commits or pull requests.</li>
+                        <li>Build Pipelines: Introduction to Jenkins pipelines and how to create them.</li>
+                    </ul>
+                </li>
+                <li>Practical Examples
+                    <ul>
+                        <li>Simple Build Job: Demonstrate a simple build job from GitHub to Jenkins.</li>
+                        <li>Pipeline Script Example: Provide an example of a basic Jenkins pipeline script.</li>
+                    </ul>
+                </li>
             </ul>
-            <div class="show-button" id="btn-module6" onclick="toggleContent('module6-content')">Show Full Content</div>
-            <div class="full-content" id="module6-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 6: Introduction to Jenkins and GitHub</strong></p>
-                <ul>
-                    <li>Introduction to Jenkins and GitHub
-                        <ul>
-                            <li>Overview of Continuous Integration (CI): Explain the concept of CI and its benefits.</li>
-                            <li>What is Jenkins?: Provide an introduction to Jenkins and its role in CI/CD pipelines.</li>
-                            <li>What is GitHub?: Explain GitHub and its importance in version control and collaboration.</li>
-                        </ul>
-                    </li>
-                    <li>Setting Up Jenkins and GitHub
-                        <ul>
-                            <li>Installing Jenkins: Guide on how to install Jenkins on different platforms.</li>
-                            <li>Creating a GitHub Account: Show how to create a GitHub account and set up repositories.</li>
-                        </ul>
-                    </li>
-                    <li>Integrating Jenkins with GitHub
-                        <ul>
-                            <li>Integrating Jenkins with GitHub for CI/CD pipelines.</li>
-                        </ul>
-                    </li>
-                    <li>Hands-on: Building a CI pipeline using Jenkins and GitHub</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <!-- Module 7 -->
     <div class="module module7">
-        <div>
-            <div class="title">Module 7: Introduction to Azure DevOps</div>
-            <ul>
-                <li>What is Azure DevOps?</li>
-                <li>Azure DevOps Services Overview</li>
-                <li>Creating a project in Azure DevOps</li>
-            </ul>
-            <div class="show-button" id="btn-module7" onclick="toggleContent('module7-content')">Show Full Content</div>
-            <div class="full-content" id="module7-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 7: Introduction to Azure DevOps</strong></p>
+        <div class="title">Module 7: Advanced Topics and Best Practices</div>
+        <ul>
+            <li>Kubernetes Advanced Topics
                 <ul>
-                    <li>Introduction to Azure DevOps
-                        <ul>
-                            <li>Overview of Azure DevOps Services: Introduction to Azure DevOps and its components (Boards, Repos, Pipelines, Artifacts, Test Plans).</li>
-                        </ul>
-                    </li>
-                    <li>Azure DevOps Projects and Pipelines
-                        <ul>
-                            <li>Creating a project in Azure DevOps</li>
-                            <li>Setting up CI/CD pipelines in Azure DevOps</li>
-                        </ul>
-                    </li>
-                    <li>Hands-on: Deploying a simple application using Azure DevOps pipeline</li>
+                    <li>Implementing ingress controllers for routing traffic</li>
+                    <li>Secrets management in Kubernetes</li>
                 </ul>
-            </div>
+            </li>
+            <li>DevOps Best Practices
+                <ul>
+                    <li>Version control strategies for DevOps</li>
+                    <li>Blue-Green deployments and Canary releases</li>
+                    <li>Monitoring and logging in CI/CD pipelines</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="show-button" id="btn-module7" onclick="toggleContent('module7-content')">Show Full Content</div>
+        <div class="full-content" id="module7-content">
+            <p><strong>Course Modules</strong></p>
+            <p>________________________________________</p>
+            <p><strong>Module 7: Advanced Topics and Best Practices</strong></p>
+            <ul>
+                <li>Kubernetes Advanced Topics
+                    <ul>
+                        <li>Implementing ingress controllers for routing traffic</li>
+                        <li>Secrets management in Kubernetes</li>
+                    </ul>
+                </li>
+                <li>DevOps Best Practices
+                    <ul>
+                        <li>Version control strategies for DevOps</li>
+                        <li>Blue-Green deployments and Canary releases</li>
+                        <li>Monitoring and logging in CI/CD pipelines</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 
+    <!-- Contact Info -->
     <div class="contact-info">
-        <p>For more information, please contact us at <strong>support@azuredevops.com</strong>.</p>
+        <p>Institute Name: <strong>UB DevopsCloudHub</strong></p>
+        <p>Contact Number: <strong>6364331326</strong></p>
+        <p>Email: <strong>baranidharanusha@gmail.com</strong></p>
     </div>
+
 </body>
 </html>
