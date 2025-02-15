@@ -26,13 +26,6 @@
             color: white;
             font-weight: bold;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-        .module img {
-            width: 50px;
-            height: 50px;
-            margin-right: 20px;
         }
         .module:hover {
             transform: scale(1.05);
@@ -90,7 +83,6 @@
 
     <!-- Module 1 -->
     <div class="module module1">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Microsoft_Azure_Logo.png" alt="Azure Logo">
         <div>
             <div class="title">Module 1: Introduction to Cloud Computing and Azure</div>
             <ul>
@@ -136,7 +128,6 @@
 
     <!-- Module 2 -->
     <div class="module module2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Terraform_Logo.svg" alt="Terraform Logo">
         <div>
             <div class="title">Module 2: Infrastructure as Code (IaC) with Terraform</div>
             <ul>
@@ -206,7 +197,6 @@
 
     <!-- Module 3 -->
     <div class="module module3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Docker_logo.png" alt="Docker Logo">
         <div>
             <div class="title">Module 3: Introduction to Docker</div>
             <ul>
@@ -244,13 +234,13 @@
 
     <!-- Module 4 -->
     <div class="module module4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo.png" alt="Kubernetes Logo">
         <div>
             <div class="title">Module 4: Introduction to Kubernetes</div>
             <ul>
-                <li>What is Kubernetes?</li>
-                <li>Setting up Kubernetes clusters</li>
-                <li>Deploying applications in Kubernetes</li>
+                <li>Understanding Kubernetes architecture</li>
+                <li>Working with Pods, Deployments, and Services</li>
+                <li>Scaling applications using Kubernetes</li>
+                <li>Hands-on: Deploying a Kubernetes application</li>
             </ul>
             <div class="show-button" id="btn-module4" onclick="toggleContent('module4-content')">Show Full Content</div>
             <div class="full-content" id="module4-content">
@@ -258,22 +248,22 @@
                 <p>________________________________________</p>
                 <p><strong>Module 4: Introduction to Kubernetes</strong></p>
                 <ul>
-                    <li>What is Kubernetes? 
+                    <li>Introduction to Kubernetes
                         <ul>
-                            <li>Understanding Kubernetes architecture and components (pods, services, deployments, etc.)</li>
+                            <li>What Kubernetes is and why it is used</li>
                         </ul>
                     </li>
-                    <li>Setting Up Kubernetes 
+                    <li>Kubernetes Architecture
                         <ul>
-                            <li>How to set up a Kubernetes cluster</li>
+                            <li>Understanding Pods, Nodes, and Clusters</li>
                         </ul>
                     </li>
-                    <li>Deploying Applications 
+                    <li>Basic Kubernetes Commands
                         <ul>
-                            <li>How to deploy applications in Kubernetes clusters.</li>
+                            <li>Introduction to kubectl commands</li>
                         </ul>
                     </li>
-                    <li>Hands-on: Creating a pod and deploying an application in Kubernetes</li>
+                    <li>Hands-on: Deploying an application on Kubernetes</li>
                 </ul>
             </div>
         </div>
@@ -281,34 +271,41 @@
 
     <!-- Module 5 -->
     <div class="module module5">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Jenkins_logo.png" alt="Jenkins Logo">
         <div>
-            <div class="title">Module 5: CI/CD with Azure DevOps and Jenkins</div>
+            <div class="title">Module 5: Continuous Integration with Jenkins</div>
             <ul>
-                <li>Continuous Integration (CI) with Azure DevOps</li>
-                <li>Integrating Terraform with Azure DevOps pipelines</li>
+                <li>Introduction to Jenkins and its role in CI/CD</li>
+                <li>Setting up Jenkins and creating pipelines</li>
+                <li>Integrating Jenkins with GitHub and other tools</li>
+                <li>Hands-on: Building a simple Jenkins pipeline</li>
             </ul>
             <div class="show-button" id="btn-module5" onclick="toggleContent('module5-content')">Show Full Content</div>
             <div class="full-content" id="module5-content">
                 <p><strong>Course Modules</strong></p>
                 <p>________________________________________</p>
-                <p><strong>Module 5: CI/CD with Azure DevOps and Jenkins</strong></p>
+                <p><strong>Module 5: Continuous Integration with Jenkins</strong></p>
                 <ul>
-                    <li>Continuous Integration (CI) with Azure DevOps
+                    <li>Introduction to Jenkins and Continuous Integration
                         <ul>
-                            <li>Building and managing CI/CD pipelines</li>
-                            <li>Integrating Terraform with Azure DevOps pipelines</li>
+                            <li>Overview of Jenkins and its use in DevOps</li>
                         </ul>
                     </li>
-                    <li>Introduction to Jenkins
+                    <li>Setting Up Jenkins
                         <ul>
-                            <li>Overview of Jenkins and its use in the DevOps pipeline</li>
-                            <li>Jenkins Setup: Installing Jenkins on different environments</li>
+                            <li>How to install and configure Jenkins</li>
                         </ul>
                     </li>
-                    <li>Creating and Managing Jenkins Pipelines</li>
-                    <li>Integrating Jenkins with GitHub</li>
-                    <li>Automating Builds using Jenkins</li>
+                    <li>Creating Jenkins Pipelines
+                        <ul>
+                            <li>Building and automating CI/CD pipelines in Jenkins</li>
+                        </ul>
+                    </li>
+                    <li>Integrating Jenkins with GitHub
+                        <ul>
+                            <li>Connecting Jenkins to GitHub repositories</li>
+                        </ul>
+                    </li>
+                    <li>Hands-on: Building a simple Jenkins pipeline</li>
                 </ul>
             </div>
         </div>
@@ -316,112 +313,50 @@
 
     <!-- Module 6 -->
     <div class="module module6">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo">
         <div>
-            <div class="title">Module 6: Introduction to Jenkins and GitHub</div>
+            <div class="title">Module 6: Version Control with Git and GitHub</div>
             <ul>
-                <li>Overview of Continuous Integration (CI)</li>
-                <li>What is Jenkins?</li>
-                <li>What is GitHub?</li>
+                <li>Git basics: clone, commit, push, pull</li>
+                <li>GitHub repositories and branching</li>
+                <li>Collaborating on projects with pull requests</li>
+                <li>Hands-on: Setting up a GitHub repository</li>
             </ul>
             <div class="show-button" id="btn-module6" onclick="toggleContent('module6-content')">Show Full Content</div>
             <div class="full-content" id="module6-content">
                 <p><strong>Course Modules</strong></p>
                 <p>________________________________________</p>
-                <p><strong>Module 6: Introduction to Jenkins and GitHub</strong></p>
+                <p><strong>Module 6: Version Control with Git and GitHub</strong></p>
                 <ul>
-                    <li>Introduction to Jenkins and GitHub
+                    <li>Introduction to Git and Version Control
                         <ul>
-                            <li>Overview of Continuous Integration (CI): Explain the concept of CI and its benefits.</li>
-                            <li>What is Jenkins?: Provide an introduction to Jenkins and its role in CI/CD pipelines.</li>
-                            <li>What is GitHub?: Explain GitHub and its importance in version control and collaboration.</li>
+                            <li>Why version control is essential in DevOps</li>
                         </ul>
                     </li>
-                    <li>Setting Up Jenkins and GitHub
+                    <li>Setting up Git
                         <ul>
-                            <li>Installing Jenkins: Guide on how to install Jenkins on different platforms.</li>
-                            <li>Creating a GitHub Account: Show how to create and set up a GitHub account.</li>
+                            <li>How to install and configure Git</li>
                         </ul>
                     </li>
-                    <li>Basic Concepts and Usage
+                    <li>Git Commands
                         <ul>
-                            <li>Jenkins Dashboard: Walkthrough of the Jenkins user interface and dashboard.</li>
-                            <li>GitHub Repositories: Explain repositories, branches, and commits in GitHub.</li>
-                            <li>Creating a Repository: Demonstrate how to create a new repository on GitHub.</li>
-                            <li>Cloning a Repository: Show how to clone a GitHub repository locally.</li>
+                            <li>Using commands like clone, commit, push, pull, and merge</li>
                         </ul>
                     </li>
-                    <li>Integration and Automation
+                    <li>Working with GitHub
                         <ul>
-                            <li>Connecting Jenkins with GitHub: Explain how to integrate Jenkins with GitHub repositories.</li>
-                            <li>Creating a Jenkins Job: Guide on how to create and configure a Jenkins job.</li>
-                            <li>Triggering Builds Automatically: Show how to set up automatic build triggers based on GitHub commits or pull requests.</li>
-                            <li>Build Pipelines: Introduction to Jenkins pipelines and how to create them.</li>
+                            <li>Creating repositories, forking, and cloning repos</li>
                         </ul>
                     </li>
-                    <li>Practical Examples
-                        <ul>
-                            <li>Simple Build Job: Demonstrate a simple build job from GitHub to Jenkins.</li>
-                            <li>Pipeline Script Example: Provide an example of a basic Jenkins pipeline script.</li>
-                        </ul>
-                    </li>
+                    <li>Hands-on: Collaborating with others using pull requests</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Module 7 -->
-    <div class="module module7">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Kubernetes_logo.svg" alt="Best Practices Logo">
-        <div>
-            <div class="title">Module 7: Advanced Topics and Best Practices</div>
-            <ul>
-                <li>Kubernetes Advanced Topics
-                    <ul>
-                        <li>Implementing ingress controllers for routing traffic</li>
-                        <li>Secrets management in Kubernetes</li>
-                    </ul>
-                </li>
-                <li>DevOps Best Practices
-                    <ul>
-                        <li>Version control strategies for DevOps</li>
-                        <li>Blue-Green deployments and Canary releases</li>
-                        <li>Monitoring and logging in CI/CD pipelines</li>
-                    </ul>
-                </li>
-                <li>Troubleshooting Kubernetes with Real-time Project</li>
-            </ul>
-            <div class="show-button" id="btn-module7" onclick="toggleContent('module7-content')">Show Full Content</div>
-            <div class="full-content" id="module7-content">
-                <p><strong>Course Modules</strong></p>
-                <p>________________________________________</p>
-                <p><strong>Module 7: Advanced Topics and Best Practices</strong></p>
-                <ul>
-                    <li>Kubernetes Advanced Topics
-                        <ul>
-                            <li>Implementing ingress controllers for routing traffic</li>
-                            <li>Secrets management in Kubernetes</li>
-                        </ul>
-                    </li>
-                    <li>DevOps Best Practices
-                        <ul>
-                            <li>Version control strategies for DevOps</li>
-                            <li>Blue-Green deployments and Canary releases</li>
-                            <li>Monitoring and logging in CI/CD pipelines</li>
-                        </ul>
-                    </li>
-                    <li>Troubleshooting Kubernetes with Real-time Project</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Info -->
+    <!-- Contact Information -->
     <div class="contact-info">
-        <p>Institute Name: <strong>UB DevopsCloudHub</strong></p>
-        <p>Contact Number: <strong>6364331326</strong></p>
-        <p>Email: <strong>baranidharanusha@gmail.com</strong></p>
+        <p>Contact us at support@example.com</p>
     </div>
 
 </body>
-</html>                                  
+</html>
